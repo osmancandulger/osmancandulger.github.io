@@ -20,15 +20,17 @@ body {
   align-items: center;
   flex-direction: column;
   position: relative;
-  background-color: #ddd;
   width: 380px;
   height: 425px;
   border-radius: 45px;
+  background: rgba(228, 251, 251, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2.25px);
+  -webkit-backdrop-filter: blur(5.5px);
 }
 .photo {
   width: 125px;
   height: 125px;
-  top: 0;
 }
 img {
   width: 115px;
@@ -37,13 +39,49 @@ img {
   margin-bottom: 5px;
   top: 0px;
 }
+
 .links {
   display: flex;
   position: relative;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   width: 100%;
   height: 35%;
   padding-top: 18px;
-  justify-content: space-evenly;
+
+  img {
+    display: flex;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 25px;
+    transition: 0.4s all;
+  }
+  img:hover {
+    transform: scale(1.25);
+    box-shadow: 0px -3px 14px 0px rgba(130, 148, 148, 0.49);
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+.container{
+  width: 340px;
+  height: 367px;
+
+}
+.photo{
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.profile-photo{
+  width: 95px;
+  height: 95px;
+}
+
+
+
 }
