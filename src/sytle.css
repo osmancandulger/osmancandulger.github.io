@@ -48,6 +48,30 @@ body {
           box-shadow: 0 8px 32px 0 rgba(119, 119, 122, 0.288);
   backdrop-filter: blur(2.25px);
   -webkit-backdrop-filter: blur(2.25px);
+  -webkit-animation: show 0.8s ease;
+          animation: show 0.8s ease;
+}
+
+@-webkit-keyframes show {
+  0% {
+    opacity: 0;
+    margin-top: 25px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+    margin-top: 25px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0px;
+  }
 }
 
 .photo {
