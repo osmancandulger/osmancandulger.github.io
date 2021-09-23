@@ -62,8 +62,12 @@ body {
   justify-content: center;
   position: relative;
   flex-wrap: wrap;
-  width: 45%;
-  bottom: 25px;
+  width: 70%;
+  bottom: 23px;
+
+  span + span {
+    font-size: 14px;
+  }
 }
 span:nth-child(1) {
   font-weight: 300;
@@ -77,6 +81,7 @@ span:nth-child(2) {
 img {
   width: 115px;
   height: 115px;
+  object-fit: cover;
   border-radius: 50%;
   margin-bottom: 5px;
   top: 0px;
